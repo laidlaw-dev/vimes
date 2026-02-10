@@ -31,7 +31,7 @@ src/
   cli/
 
 
-Tests for each subsystem live in tests/.
+Tests for each subsystem live next to their implementations under src/.
 
 ---
 
@@ -243,14 +243,20 @@ source → lexer → parser → type checker → evaluator → output
 
 10. Testing Strategy
 
-Tests live in tests/ and mirror the folder structure of src/.
+Tests live beside their corresponding modules and mirror the folder structure locally.
 
-Each subsystem has its own test suite:
+Examples:
 
-tests/
-  lexer.test.ts
+src/lexer/
+  tokenize.ts
+  tokenize.test.ts
+
+src/parser/
+  parser.ts
   parser.test.ts
-  typeChecker.test.ts
+
+src/runtime/
+  evaluator.ts
   evaluator.test.ts
 
 

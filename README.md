@@ -48,11 +48,13 @@ src/
   cli/
   errors/
   lexer/
+    tokenize.ts
+    tokenize.test.ts
   parser/
   runtime/
   types/
 
-tests/
+Tests live next to the modules they cover (e.g., `src/lexer/tokenize.test.ts`).
 
 
 ## Development

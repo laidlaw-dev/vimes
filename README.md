@@ -43,6 +43,17 @@ docs/
     testing-guidelines.md
     feature-boundaries.md
 
+src/
+  index.ts : entry point
+  cli/
+  errors/
+  lexer/
+  parser/
+  runtime/
+  types/
+
+tests/
+
 
 ## Development
 

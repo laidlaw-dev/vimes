@@ -25,17 +25,24 @@ Only Vitest is allowed.
 
 2. Test File Structure
 
-Tests live in the top‑level tests/ directory and mirror the structure of src/.
+Tests live alongside the source files they verify inside src/.
 
 Example:
 
-src/lexer/        → tests/lexer.test.ts
-src/parser/       → tests/parser.test.ts
-src/types/        → tests/typeChecker.test.ts
-src/runtime/      → tests/evaluator.test.ts
+src/lexer/
+  tokenize.ts
+  tokenize.test.ts
+
+src/parser/
+  parser.ts
+  parser.test.ts
+
+src/runtime/
+  evaluator.ts
+  evaluator.test.ts
 
 
-AI must not create new test directories unless explicitly instructed.
+AI must not create parallel test directory trees unless explicitly instructed.
 
 ---
 

@@ -190,7 +190,7 @@ Formatting should match typical Prettier defaults, even if Prettier is not insta
 AI must:
 
 - write Vitest tests for all new code
-- place tests in the correct file under tests/
+- place tests next to the source files they cover
 - test both valid and invalid cases
 - avoid console output in tests
 - assert on error types and messages

@@ -32,10 +32,37 @@ This file is the _single source of truth_ for the language syntax.
 All parser and interpreter work must conform to it.
 
 
+## Project Structure
+
+docs/
+  grammar.md : grammar rules for Vimes
+  architecture.md : overall structure of the project
+  ai/
+    rules.md
+    coding-style.md
+    testing-guidelines.md
+    feature-boundaries.md
+
+
+## Development
+
+This project uses
+
+- **Node.js**
+- **Typescript**
+- **ESLint**
+- **vitest**
+
+It has npm scripts set up
+
+- `npm run build` : builds the project
+- `npm run lint` : runs eslint
+- `npm run test` : runs the tests
+
 ## AI-Assited Development
 
 This project is designed to be safely used with Github Copilot.
-All AI-related rules and constriants are defined in: dics/ai/
+All AI-related rules and constriants are defined in: /docs/ai/
 
 ## License
 
@@ -50,3 +77,4 @@ Vimes is in early development. The initial milestones are:
 - Type checker
 - Evaluator
 - CLI
+

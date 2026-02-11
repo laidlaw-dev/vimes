@@ -5,6 +5,31 @@ Vimes is a small, principaled, expression-oriented programming language designed
 It emphasizes clarity, explicitness, and strong typing, with a functional core and named parameters as a first class concept.
 This repository contains the reference implementation of the Vimes interpreter.
 
+## AI Use
+
+This project was designed to experiment with AI coding tools.
+
+- Nearly all the code, including tests, is writtem with AI.
+- A human created the base node project with eslint, typescript and vitest setup.
+- A human created the .md files to guide the AI.
+
+A programming language was chosen since it's a well defined problem with a very clear, modular structure. The main spec of the language
+is clearly defined using EBNF - it can be seen in /doc/grammar.md. A programming language can be easily extended and modified, so I can
+test the AI writing a new project and modifying and existing one.
+
+The workflow was deliberately broken down into small blocks, with the AI asking for permission before moving onto the next step. This slows down the process but allowed me to tweak the .md files as required. For each module the workflow has four steps
+
+- Plan
+- Write tests
+- Write implementation
+- Validation: run tests, lint and build
+
+Outside of the .md files, the prompts are mainly "procede to the next step".
+
+### AI tools
+
+- Github Copilot in Visual Code
+- GPT-5.1-Codex
 
 ## Author
 laidlaw_dev

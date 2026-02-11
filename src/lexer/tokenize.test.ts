@@ -1,5 +1,5 @@
-import { SyntaxError } from "@/errors/index.js";
-import { tokenize, Token } from "@/lexer/index.js";
+import { SyntaxError } from "../errors/index.js";
+import { tokenize, Token } from "./index.js";
 
 interface SimpleToken {
   type: Token["type"];

@@ -1,4 +1,4 @@
-import { SourcePosition } from "@/types/source-position.js";
+import { SourcePosition } from "../types/source-position.js";
 
 export class VimesError extends Error {
   public readonly position?: SourcePosition;

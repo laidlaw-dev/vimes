@@ -1,5 +1,5 @@
-import { SyntaxError } from "@/errors/index.js";
-import { Token, TokenType } from "@/lexer/tokens.js";
+import { SyntaxError } from "../errors/index.js";
+import { Token, TokenType } from "../lexer/tokens.js";
 import {
   BinaryOperator,
   BlockExpression,
@@ -34,7 +34,7 @@ import {
   UIntLiteralPattern,
   UnaryOperator,
   WildcardPattern,
-} from "@/parser/ast.js";
+} from "./ast.js";
 
 export const parseProgram = (tokens: Token[]): Program => new Parser(tokens).parseProgram();
 

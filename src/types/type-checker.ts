@@ -1,4 +1,4 @@
-import { TypeError } from "@/errors/index.js";
+import { TypeError } from "../errors/index.js";
 import {
   BinaryExpression,
   BlockExpression,
@@ -22,8 +22,8 @@ import {
   TypeNode,
   UIntLiteralExpression,
   UnaryExpression,
-} from "@/parser/ast.js";
-import { SourcePosition } from "@/types/source-position.js";
+} from "../parser/ast.js";
+import { SourcePosition } from "./source-position.js";
 
 export type PrimitiveTypeName = "UInt" | "Bool";
 

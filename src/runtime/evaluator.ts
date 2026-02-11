@@ -1,5 +1,5 @@
-import { RuntimeError } from "@/errors/index.js";
-import type { FunctionExpression, Pattern } from "@/parser/ast.js";
+import { RuntimeError } from "../errors/index.js";
+import type { FunctionExpression, Pattern } from "../parser/ast.js";
 import {
   TypedBlockExpression,
   TypedExpression,
@@ -9,10 +9,10 @@ import {
   TypedNamedArgument,
   TypedProgram,
   TypedStatement,
-} from "@/types/type-checker.js";
-import { Environment } from "@/runtime/environment.js";
-import { BoolValue, FunctionValue, Value, createBoolValue, createFunctionValue, createUIntValue } from "@/runtime/values.js";
-import type { SourcePosition } from "@/types/source-position.js";
+} from "../types/type-checker.js";
+import { Environment } from "./environment.js";
+import { BoolValue, FunctionValue, Value, createBoolValue, createFunctionValue, createUIntValue } from "./values.js";
+import type { SourcePosition } from "../types/source-position.js";
 
 type TypedFunctionExpression = FunctionExpression & { readonly body: TypedBlockExpression };
 type TypedMatchExpression = TypedExpression & {

@@ -1,6 +1,6 @@
-import { RuntimeError } from "@/errors/index.js";
-import type { Value } from "@/runtime/values.js";
-import type { SourcePosition } from "@/types/source-position.js";
+import { RuntimeError } from "../errors/index.js";
+import type { Value } from "./values.js";
+import type { SourcePosition } from "../types/source-position.js";
 
 interface Frame {
   readonly bindings: ReadonlyMap<string, Value>;

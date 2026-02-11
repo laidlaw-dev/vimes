@@ -1,6 +1,6 @@
-import type { Environment } from "@/runtime/environment.js";
-import type { FunctionParameter } from "@/parser/ast.js";
-import type { TypedBlockExpression } from "@/types/type-checker.js";
+import type { Environment } from "./environment.js";
+import type { FunctionParameter } from "../parser/ast.js";
+import type { TypedBlockExpression } from "../types/type-checker.js";
 
 export interface UIntValue {
   readonly kind: "UIntValue";

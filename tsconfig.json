@@ -11,9 +11,7 @@
     "skipLibCheck": true,
     "types": ["vitest/globals"],
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }

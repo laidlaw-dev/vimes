@@ -1,6 +1,6 @@
-import { RuntimeError, SyntaxError, TypeError } from "@/errors/index.js";
-import type { Value } from "@/runtime/values.js";
-import type { SourcePosition } from "@/types/source-position.js";
+import { RuntimeError, SyntaxError, TypeError } from "../errors/index.js";
+import type { Value } from "../runtime/values.js";
+import type { SourcePosition } from "../types/source-position.js";
 
 export const formatValue = (value: Value): string => {
   switch (value.kind) {

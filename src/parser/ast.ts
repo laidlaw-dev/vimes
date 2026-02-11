@@ -1,4 +1,4 @@
-import { SourcePosition } from "@/types/source-position.js";
+import { SourcePosition } from "../types/source-position.js";
 
 export interface Node {
   readonly kind: string;

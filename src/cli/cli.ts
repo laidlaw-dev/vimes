@@ -1,10 +1,10 @@
 import { readFile as readFileFromFs } from "node:fs/promises";
 import { createInterface } from "node:readline";
 
-import { formatError, formatValue } from "@/cli/format.js";
-import { runFileCommand } from "@/cli/run-command.js";
-import { startRepl } from "@/cli/repl.js";
-import type { Value } from "@/runtime/values.js";
+import { formatError, formatValue } from "./format.js";
+import { runFileCommand } from "./run-command.js";
+import { startRepl } from "./repl.js";
+import type { Value } from "../runtime/values.js";
 
 export interface CliIO {
   stdout(text: string): void;

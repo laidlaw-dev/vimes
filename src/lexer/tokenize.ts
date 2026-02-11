@@ -1,12 +1,12 @@
-import { SyntaxError } from "@/errors/index.js";
+import { SyntaxError } from "../errors/index.js";
 import {
   KEYWORDS,
   SINGLE_CHAR_TOKENS,
   Token,
   TokenType,
   LiteralValue,
-} from "@/lexer/tokens.js";
-import { SourcePosition } from "@/types/source-position.js";
+} from "./tokens.js";
+import { SourcePosition } from "../types/source-position.js";
 
 export const tokenize = (source: string): Token[] => {
   const tokens: Token[] = [];

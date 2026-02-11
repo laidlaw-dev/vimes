@@ -1,6 +1,6 @@
-import { formatError, formatValue } from "@/cli/format.js";
-import { executeProgramSource } from "@/cli/run-command.js";
-import type { CliIO, ReadlineFactory } from "@/cli/cli.js";
+import { formatError, formatValue } from "./format.js";
+import { executeProgramSource } from "./run-command.js";
+import type { CliIO, ReadlineFactory } from "./cli.js";
 
 interface ReplOptions {
   readonly createReadline: ReadlineFactory;

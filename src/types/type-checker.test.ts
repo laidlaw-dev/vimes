@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
 
-import { TypeError } from "@/errors/index.js";
-import { tokenize } from "@/lexer/tokenize.js";
-import { parseProgram } from "@/parser/parser.js";
+import { TypeError } from "../errors/index.js";
+import { tokenize } from "../lexer/tokenize.js";
+import { parseProgram } from "../parser/parser.js";
 import {
   PrimitiveType,
   Type,
@@ -10,7 +10,7 @@ import {
   TypedProgram,
   UIntType,
   checkProgram,
-} from "@/types/type-checker.js";
+} from "./type-checker.js";
 
 const parseAndCheck = (source: string): TypedProgram => {
   const program = parseProgram(tokenize(source));

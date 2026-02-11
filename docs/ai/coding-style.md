@@ -145,12 +145,12 @@ AI must:
 - avoid circular imports
 - avoid wildcard imports (import * as X)
 - keep import paths absolute and minimal
-- the project is configured to use absolute paths where "@" is "/src"
+- use relative paths
 
 
 Example:
 
-import { Token } from "@/lexer/tokens";
+import { Token } from "src/lexer/tokens";
 
 ---
 

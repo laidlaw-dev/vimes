@@ -1,9 +1,9 @@
-import type { CliDependencies } from "@/cli/cli.js";
-import { evaluateProgram } from "@/runtime/evaluator.js";
-import type { Value } from "@/runtime/values.js";
-import { tokenize } from "@/lexer/tokenize.js";
-import { parseProgram } from "@/parser/parser.js";
-import { checkProgram } from "@/types/type-checker.js";
+import type { CliDependencies } from "./cli.js";
+import { evaluateProgram } from "../runtime/evaluator.js";
+import type { Value } from "../runtime/values.js";
+import { tokenize } from "../lexer/tokenize.js";
+import { parseProgram } from "../parser/parser.js";
+import { checkProgram } from "../types/type-checker.js";
 
 export const executeProgramSource = (source: string): Value | undefined => {
   const tokens = tokenize(source);

@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
 
-import { SyntaxError } from "@/errors/index.js";
-import { tokenize } from "@/lexer/tokenize.js";
-import { FunctionDeclaration, LetStatement, Program } from "@/parser/ast.js";
-import { parseProgram } from "@/parser/parser.js";
+import { SyntaxError } from "../errors/index.js";
+import { tokenize } from "../lexer/tokenize.js";
+import { FunctionDeclaration, LetStatement, Program } from "./ast.js";
+import { parseProgram } from "./parser.js";
 
 const parseSource = (source: string): Program => parseProgram(tokenize(source));
 

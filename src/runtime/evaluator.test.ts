@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
 
-import { RuntimeError } from "@/errors/index.js";
-import { tokenize } from "@/lexer/tokenize.js";
-import { parseProgram } from "@/parser/parser.js";
-import { evaluateProgram } from "@/runtime/evaluator.js";
-import { BoolValue, UIntValue, Value } from "@/runtime/values.js";
-import { checkProgram } from "@/types/type-checker.js";
+import { RuntimeError } from "../errors/index.js";
+import { tokenize } from "../lexer/tokenize.js";
+import { parseProgram } from "../parser/parser.js";
+import { evaluateProgram } from "./evaluator.js";
+import { BoolValue, UIntValue, Value } from "./values.js";
+import { checkProgram } from "../types/type-checker.js";
 
 const run = (source: string): Value | undefined => {
   const program = parseProgram(tokenize(source));

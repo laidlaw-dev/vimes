@@ -1,4 +1,4 @@
-import { runCli, type CliDependencies, type CliIO, type ReadlineOptions } from "@/cli/cli.js";
+import { runCli, type CliDependencies, type CliIO, type ReadlineOptions } from "./cli.js";
 
 const USAGE_MESSAGE = "Usage: vimes run <file> | repl";
 

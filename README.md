@@ -42,6 +42,7 @@ docs/
     coding-style.md
     testing-guidelines.md
     feature-boundaries.md
+    workflow.md
 
 src/
   index.ts : entry point

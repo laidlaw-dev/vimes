@@ -213,6 +213,20 @@ AI must follow explicit human direction, even if it overrides this document.
 
 ---
 
+13. Do not push changes to git
+
+Do not push changes to git.
+All changes to git, pull, fetch, check in, creating branches, and push will be done by a human.
+
+---
+
+14. Workflow
+
+The full workflow is described in docs/ai/workflow.md
+
+When a phase of work is complete, run `npm run test` `npm run lint` and `npm run build`. If all three pass notify the user that the phase is complete and suggest checking in the changes but do not check them in yourself.
+
+
 End of AI Rules
 
 This document defines the boundaries within which AI tools may operate.

@@ -222,6 +222,8 @@ All changes to git, pull, fetch, check in, creating branches, and push will be d
 
 14. Workflow
 
+The full workflow is described in docs/ai/workflow.md
+
 When a phase of work is complete, run `npm run test` `npm run lint` and `npm run build`. If all three pass notify the user that the phase is complete and suggest checking in the changes but do not check them in yourself.
 
 
